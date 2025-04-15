@@ -1,0 +1,27 @@
+// Add The Two Array
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,m;
+    cin>>n>>m;
+    int arr1[n+1], arr2[m+1];
+    for(int i=1; i<=n; i++)   // 1 2 3 4 5
+    {
+        cin>>arr1[i];
+    }
+    for(int i=1; i<=m; i++)  // 6 7 8 9 10 11
+    {
+        cin>>arr2[i];
+    }
+    for(int k=1; k<=m; k++)
+    {
+        arr1[n+k] = arr2[k];
+    }
+    int p = n+m;
+    for(int i=1; i<=p; i++)
+    {
+        cout<<arr1[i]<<" ";
+    }
+    return 0;
+}
